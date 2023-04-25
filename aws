@@ -71,23 +71,7 @@ Less expensive than reduced redundancy storage
 	May take several hours to retrieve the objects from this storage 
 	Cheapest s3 storage class
 
-Yet, EC2 instances pair up with Amazon’s Elastic Block Storage (Amazon EBS) for greater durability.
-You can also use the Amazon Simple Storage Service (Amazon S3) with EC2 as additional storage.
-So, how do EC2 instances help?
 
-ultimate-guide-to-cloud-cost-optimization-cover 
-
-👉 FREE GUIDE 🔥
-
-The Last Cloud Cost Optimization Guide You'll Ever Need.
-
-Discover how to monitor, control, and optimize your AWS account and never be surprised by a bill again.
-
-Your Email*
-Subscribe to our blog for fresh content delivered to your inbox and receive access to our most popular guide!
-
-What Are EC2 Instances Used For?
-AWS offers five categories of Amazon EC2 instances for a variety of use cases. Here's a quick overview of EC2 instances available today:
 
 Amazon ECS Instances
 
@@ -115,3 +99,7 @@ Spot Instances Spot instances are one of the most cost effective options to laun
 Dedicated Hosts 
 Dedicated Instances
 Capacity Reservations
+	   
+Docker compose 
+Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. 
+Then, with a single command, you create and start all the services from your configuration.
