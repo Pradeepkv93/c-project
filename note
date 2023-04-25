@@ -33,6 +33,10 @@ Headless service
  3. Pod eviction 
 
 	- Kubernetes evict pods if the node resources are running out such as cpu, RAM and storage.
+	
+	HPA: HPA stands for Horizontal Pod Autoscaler. It is a feature in Kubernetes that automatically adjusts the number of replicas (pods) of a deployment or a replica set based on CPU utilization or other custom metrics. HPA ensures that the application has the right amount of resources (pods) available to handle the current traffic or workload, and it can scale up or down dynamically based on the defined metrics thresholds.
+
+VPA: VPA stands for Vertical Pod Autoscaler. It is another feature in Kubernetes that adjusts the resource allocations (CPU and memory) of individual pods based on their actual resource usage. VPA monitors the resource utilization of each pod and adjusts the resource requests and limits to optimize the performance and efficiency of the pods, without manually updating the pod specifications.
 	- Pod with failed state will be evicted first because they may not running but could still 
 	  be using cluster resources and then k8s runs decision making based.
 	  
