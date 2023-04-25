@@ -1,0 +1,22 @@
+
+	  RollingUpdate	
+		MaxSurge 
+		  - Specifies the maximum number of pods the Deployment is allowed to create at one time. 
+		  - You can specify this as a whole number (e.g. 5), or as a percentage of the total required number of pods 		
+		         (e.g. 10%, always rounded up to the next whole number). 
+		  - If you do not set MaxSurge, the implicit, default value is 25%.
+		
+		MaxUnavailable 
+		  - specifies the maximum number of pods that are allowed to be unavailable during the rollout. 
+		  - Like MaxSurge, you can define it as an absolute number or a percentage. 
+	
+Headless service 
+	- If we don't need the default loadbalancing capability of services nor the single IP to service we use StatefullSet 
+	- using Headless service we can get all the target pod ips, if we do nslookup.
+	- It is created by sepcifying 'none' for ClusterIP
+	- Headless service is usually used with StatefullSet controller.  
+
+
+	- Headless service returns all the ips of the pods it is selecting.
+	- headless service is created by specifying none for clusterIP 
+	- headless service is usually used with statefulsets.
