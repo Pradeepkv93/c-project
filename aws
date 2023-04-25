@@ -1,0 +1,117 @@
+Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time
+Default metrics of EC2 instance: Network usage CPU Usage 
+
+Metrics:
+Metrics are data about the performance of your systems
+Basic monitoring: which polls for every 5 minutes
+Detailed monitoring: which polls for every 1 minute
+Alarm state
+Insufficient 
+OK state 
+Alarm:
+CloudWatch Alarms feature allows you to watch CloudWatch metrics and to receive notifications when the metrics fall outside of the levels (high or low thresholds) that you configure
+Ex:
+If CPU utilization goes beyond the static threshold alarm goes to alarm state 
+Three states in CW Alarm:
+
+
+VPC Peering: 
+•	A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. 
+•	Instances in either VPC can communicate with each other as if they are within the same network.
+•	You can create a VPC peering connection between your own VPCs, or with a VPC in another AWS account.
+•	The VPCs can be in different regions (also known as an inter-region VPC peering connection
+Conditions:
+•	CIDR block shouldn’t overlap 
+•	Transitive peering relationships are not supported. i.e here VPC B cannot connect with VPC C.
+•	If the VPCs are in different regions, inter-region data transfer costs apply.
+•	You cannot have more than one VPC peering connection between the same two VPCs at the same time.
+
+Elastic load Balancer (ELB):
+
+	Manage and control the flow of inbound request to group of targets by distributing the requests evenly across the targets. The targets may be EC2 instances lambda or containers
+Types of Load balancer:
+
+Application load balancer:
+•	Used mainly for web application running http and https protocols.
+•	Operates at request level.
+
+Network Load balancer:
+•	Ultra-high Performance at very low latency.
+•	Operates at connection level, routing traffic to targets with in VPC.
+•	Can handle millions of requests per second.
+
+Classic load Balancer:
+•	Used for applications that were built in existing EC2 classic env.
+•	Operates both at connection & request level.
+
+S3 has a simple web services interface that you can use to store and retrieve any amount of data, at any time, from anywhere on the web
+
+S3 Storage classes:
+•	Standard:
+	Designed for general- and all-purpose storage 
+	Default storage option
+	99.999999999% object durability
+	99.99% object availability 
+	Most expensive storage class.
+
+•	Reduced Redundancy storage 
+	Designed for non-critical objects 
+	99.99% object durability 
+	99.99% object availability
+	Less expensive than standard
+
+•	Infrequent access
+	Designed for less frequently accessed objects.
+	99.999999999% object durability
+	99.99% object availability
+Less expensive than reduced redundancy storage
+
+•	Glacier
+	Designed for long term archival storage 
+	May take several hours to retrieve the objects from this storage 
+	Cheapest s3 storage class
+
+Yet, EC2 instances pair up with Amazon’s Elastic Block Storage (Amazon EBS) for greater durability.
+You can also use the Amazon Simple Storage Service (Amazon S3) with EC2 as additional storage.
+So, how do EC2 instances help?
+
+ultimate-guide-to-cloud-cost-optimization-cover 
+
+👉 FREE GUIDE 🔥
+
+The Last Cloud Cost Optimization Guide You'll Ever Need.
+
+Discover how to monitor, control, and optimize your AWS account and never be surprised by a bill again.
+
+Your Email*
+Subscribe to our blog for fresh content delivered to your inbox and receive access to our most popular guide!
+
+What Are EC2 Instances Used For?
+AWS offers five categories of Amazon EC2 instances for a variety of use cases. Here's a quick overview of EC2 instances available today:
+
+Amazon ECS Instances
+
+General Purpose
+
+Compute Optimized
+
+Memory Optimized
+
+Storage Optimized
+
+Accelerated Computing
+
+General Purpose instances provide balanced CPU, RAM, storage, and networking performance for a wide variety of workloads.
+Compute-optimized instances are suitable for workloads that require high-performance processing capacity, such as batch processing and high-traffic web servers.
+Memory-optimized instances are ideal for workloads that require processing large data sets in memory.
+Storage-optimized instances facilitate rapid, sequential read and write access to vastly large sets of data on local storage. They allow applications to perform tens of thousands of random I/O operations per second (IOPS) at low latency.
+Accelerated computing instances leverage co-processing or hardware accelerators to perform specific tasks, such as graphics processing.
+
+AWS EC2 Instance Purchasing Options
+On-Demand Instances This is one of the most flexible option to launch an EC2 instance in AWS. You pay per second of compute capacity that you launch.
+Reserved Instances All you need is to commit to a specific instance configuration, instance type and duration which can be either 1 or 3 years.
+Savings Plans 
+Spot Instances Spot instances are one of the most cost effective options to launch an EC2 instance on AWS but your instance can be taken from you at any time
+Dedicated Hosts 
+Dedicated Instances
+Capacity Reservations
